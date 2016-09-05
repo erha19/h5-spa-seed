@@ -1,0 +1,6 @@
+.tmp
+.idea
+.sass-cache
+src/template
+bower_components
+node_modules

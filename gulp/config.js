@@ -1,0 +1,42 @@
+/*
+ * Copyright (c) 2016, kuiwu
+ * Licensed under the MIT License.
+ */
+
+'use strict';
+
+let gutil = require('gulp-util'),
+    bower_path = 'bower_components';
+
+exports.paths = {
+  bower_path: bower_path,
+  src: 'src',
+  dist: 'build',
+  tmp: '.tmp'
+};
+/*
+ * @description 依赖配置
+ */
+exports.vendor = {
+  // 程序启动依赖模块
+  base: {
+    source: require('../vendor.base.json'),
+    dest: 'src/vendor',
+    name: 'vendor'
+  }
+};
+exports.modules = {
+    dest:'template',
+    templateModuleName: 'TPLS',
+    filename:'templateCache'
+}
+
+/*
+ * @description 错误处理
+ */
+exports.errorHandler = function() {
+  return function(err) {
+    gutil.beep();
+    gutil.log(err.toString());
+  }
+};

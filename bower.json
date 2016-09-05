@@ -1,0 +1,23 @@
+{
+  "name": "seal",
+  "description": "",
+  "main": "",
+  "authors": [
+    "kuiwu"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zepto": "^1.1.6",
+    "zepto.datepicker.js": "https://github.com/LuoPQ/zepto.datepicker.js.git",
+    "fastclick": "^1.0.6",
+    "Zepto-Slide": "https://github.com/thatk/Zepto-Slide.git"
+  }
+}

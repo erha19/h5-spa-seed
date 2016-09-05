@@ -1,0 +1,4 @@
+[
+  "bower_components/zepto/zepto.js",
+  "bower_components/fastclick/lib/fastclick.js"
+]
